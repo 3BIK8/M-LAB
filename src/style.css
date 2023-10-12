@@ -206,6 +206,7 @@ h1 span {
 }
 .quote i {
 	font-size: 64px;
+	color: var(--secondary-color);
 }
 /* ####################################### */
 
@@ -235,5 +236,6 @@ h1 span {
 	padding: 10px 0;
 }
 .s2-content p {
-	color: #999;
+	color: #aaa;
+	line-height: 1.5;
 }
