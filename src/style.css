@@ -60,7 +60,7 @@ body {
 	width: 30%;
 }
 .wrapper {
-	background-image: url(./bg.jpg);
+	background-image: url(../assets/bg.jpg);
 	position: relative;
 	/* z-index: -3; */
 }
