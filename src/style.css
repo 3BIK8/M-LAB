@@ -220,6 +220,8 @@ h1 span {
 .s2-img {
 	height: 200px;
 	width: 40%;
+	position: relative;
+	z-index: 1;
 }
 .s2-img img {
 	width: 100%;
@@ -238,4 +240,43 @@ h1 span {
 .s2-content p {
 	color: #aaa;
 	line-height: 1.5;
+	font-size: 18px;
+}
+.s2-img::before,
+.s2-img::after {
+	position: absolute;
+	content: "";
+	height: 0;
+	width: 100%;
+	opacity: 0.8;
+	z-index: 2;
+	transition: all 0.3s ease-in-out;
+}
+.s2-img::before {
+	top: 0;
+	background: linear-gradient(to bottom, #000, transparent);
+}
+.s2-img::after {
+	left: 0;
+	bottom: 0;
+	background: linear-gradient(to top, #000, transparent);
+}
+
+.s2-img:hover::before,
+.s2-img:hover::after {
+	height: 50%;
+}
+.s2-img a {
+	text-decoration: underline;
+	z-index: 4;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+.s2-img:hover a {
+	opacity: 1;
 }
