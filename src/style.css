@@ -28,12 +28,12 @@ body {
 	height: 100%;
 	z-index: -1;
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 	grid-auto-rows: 50px;
-	gap: 0.4px;
+	gap: 0.2px;
 	align-items: center;
 	justify-content: center;
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.2);
 }
 .cell {
 	z-index: 0;
@@ -206,4 +206,34 @@ h1 span {
 }
 .quote i {
 	font-size: 64px;
+}
+/* ####################################### */
+
+.s2 {
+	height: max-content;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 100px 70px;
+}
+.s2-img {
+	height: 200px;
+	width: 40%;
+}
+.s2-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.s2-content {
+	width: 50%;
+}
+.s2-content h2 {
+	font-size: 30px;
+	font-weight: 700;
+	color: var(--secondary-color);
+	padding: 10px 0;
+}
+.s2-content p {
+	color: #999;
 }
