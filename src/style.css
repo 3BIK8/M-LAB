@@ -17,9 +17,7 @@ a {
 	color: inherit;
 }
 body {
-	/* font-family: "Roboto", sans-serif; */
 	font-family: "Lora", serif;
-	/* background: var(--secondary-color); */
 	color: var(--text-color);
 }
 .container {
@@ -62,7 +60,6 @@ body {
 .wrapper {
 	background-image: url(../assets/bg.jpg);
 	position: relative;
-	/* z-index: -3; */
 }
 
 .nav-item {
@@ -110,7 +107,6 @@ body {
 	margin-top: 30px;
 }
 .buttons {
-	/* margin-top: 40px; */
 	display: flex;
 	gap: 10px;
 	flex-direction: column;
@@ -193,7 +189,6 @@ h1 span {
 	height: 100%;
 }
 .wrapper {
-	background: url(/assets/bg.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 }
