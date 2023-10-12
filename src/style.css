@@ -33,7 +33,7 @@ body {
 	gap: 0.2px;
 	align-items: center;
 	justify-content: center;
-	background: rgba(0, 0, 0, 0.2);
+	background: var(--accent-color);
 }
 .cell {
 	z-index: 0;
