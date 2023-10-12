@@ -60,6 +60,8 @@ body {
 .wrapper {
 	background-image: url(../assets/bg.jpg);
 	position: relative;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .nav-item {
@@ -188,10 +190,7 @@ h1 span {
 .logo-container img {
 	height: 100%;
 }
-.wrapper {
-	background-attachment: fixed;
-	background-size: cover;
-}
+
 .dash {
 	height: 15px;
 	background: #fff;
