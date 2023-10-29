@@ -15,6 +15,8 @@
 			crossorigin="anonymous"
 		></script>
 		<title>M-LAB Engineering</title>
+
+		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	</head>
 	<body>
 		<article class="first">
@@ -130,7 +132,69 @@
 				</div>
 			</section>
 		</article>
-		<article class="third"></article>
+		<article class="third">
+			<div id="particles-js"></div>
+			<section class="forth-section">
+				<h2 class="section-title">Our solutions</h2>
+				<div class="circles-container">
+					<div class="circle c1">
+						<span class="icon"><i class="fa-solid fa-laptop-code"></i></span>
+						<h4 class="solution">lorem</h4>
+					</div>
+					<div class="circle c2">
+						<span class="icon"
+							><i class="fa-solid fa-chalkboard-user"></i
+						></span>
+						<h4 class="solution">ipsum</h4>
+					</div>
+					<div class="circle c3">
+						<span class="icon"><i class="fa-solid fa-train"></i></span>
+						<h4 class="solution">amit</h4>
+					</div>
+					<div class="circle c4">
+						<span class="icon"><i class="fa-solid fa-plane"></i></span>
+						<h4 class="solution">dolor test</h4>
+					</div>
+					<div class="circle c5">
+						<span class="icon"><i class="fa-solid fa-car"></i></span>
+						<h4 class="solution">elittext</h4>
+					</div>
+					<div class="circles-content">
+						<p class="c1p circle-description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+							repudiandae modi molestias! Nostrum nesciunt iusto omnis dolorum
+							placeat, delectus nihil amet animi neque. Quisquam blanditiis
+							aspernatur quam ut, quibusdam temporibus!
+						</p>
+						<p class="c2p circle-description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
+							rem ab maxime odio doloremque officia voluptatibus fugit.
+						</p>
+						<p class="c3p circle-description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eos
+							sit quia, mollitia ab iure consequatur atque amet architecto odit
+							veritatis voluptas assumenda.
+						</p>
+						<p class="c4p circle-description">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit
+							dolorum modi ratione voluptatum tempore voluptatem quia! Vitae,
+							id. Incidunt, accusantium.
+						</p>
+						<p class="c5p circle-description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+							repudiandae modi molestias! Nostrum nesciunt iusto omnis dolorum
+							placeat, delectus nihil amet animi neque. Quisquam blanditiis
+							aspernatur quam ut.
+						</p>
+					</div>
+				</div>
+			</section>
+		</article>
 	</body>
 	<script src="./src/script.js" async></script>
+	<script>
+		particlesJS.load("particles-js", "particles.json", function () {
+			console.log("Particles.js loaded!");
+		});
+	</script>
 </html>
