@@ -11,11 +11,6 @@
 			href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800;1,900&family=Roboto:wght@300;400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
-		<script
-			src="https://kit.fontawesome.com/b35556898e.js"
-			crossorigin="anonymous"
-		></script>
-		<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -230,9 +225,60 @@
 				</div>
 			</section>
 		</article>
+		<footer>
+			<section class="last">
+				<div class="footer-image">
+					<img src="./assets/M-LAG_MAIN.png" alt="logo" />
+				</div>
+				<ul class="social-media">
+					<li class="social"><a href="#" class="fa-brands fa-facebook"></a></li>
+					<li class="social">
+						<a href="#" class="fa-brands fa-instagram"></a>
+					</li>
+					<li class="social">
+						<a href="#" class="fa-brands fa-x-twitter"></a>
+					</li>
+					<li class="social"><a href="#" class="fa-brands fa-linkedin"></a></li>
+				</ul>
+			</section>
+			<a href="/" class="copy">&copy;2023 M-LAB. All rights reserved.</a>
+		</footer>
 	</body>
+	<script
+		src="https://kit.fontawesome.com/b35556898e.js"
+		crossorigin="anonymous"
+	></script>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script src="./src/script.js" async></script>
+	<script async>
+		// Get all circle elements and description paragraphs
+		const circles = document.querySelectorAll(".circle");
+		const descriptions = document.querySelectorAll(".circles-content p");
+
+		// Add a mouseover event listener to each circle
+		circles.forEach((circle, index) => {
+			circle.addEventListener("mouseover", () => {
+				// Hide all descriptions
+				descriptions.forEach((description) => {
+					description.style.display = "none";
+				});
+
+				// Display the description corresponding to the hovered circle
+				descriptions[index].style.display = "block";
+			});
+		});
+
+		// ###############################################
+		var swiper = new Swiper(".swiper-container", {
+			slidesPerView: "auto",
+			spaceBetween: 30,
+			loop: true,
+			speed: 1500, // Adjust the speed of scrolling
+			autoplay: {
+				delay: 0,
+			},
+		});
+	</script>
 	<script>
 		particlesJS.load("particles-js", "particles.json", function () {});
 	</script>
