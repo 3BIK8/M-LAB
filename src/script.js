@@ -16,3 +16,12 @@ circles.forEach((circle, index) => {
 });
 
 // ###############################################
+var swiper = new Swiper(".swiper-container", {
+	slidesPerView: "auto",
+	spaceBetween: 30,
+	loop: true,
+	speed: 1500, // Adjust the speed of scrolling
+	autoplay: {
+		delay: 0,
+	},
+});

@@ -57,6 +57,7 @@ html {
 	font-size: 62.5%;
 	background: var(--background-color);
 	color: var(--text-color);
+	scroll-behavior: smooth;
 }
 a {
 	text-decoration: none;
@@ -233,6 +234,7 @@ header nav {
 	font-family: var(--headings-font);
 	font-weight: var(--fw-b);
 	text-transform: capitalize;
+	z-index: 99;
 }
 .section-desc {
 	line-height: 150%;
@@ -309,7 +311,9 @@ header nav {
 	visibility: visible;
 }
 /* !!!!!!!!!!!!!!!!<SECOND END>!!!!!!!!!!!!!!!!!!!!! */
-/*  */
+/****************************************************************\
+	@Third
+\****************************************************************/
 .third {
 	position: relative;
 }
@@ -318,6 +322,7 @@ header nav {
 	height: 100%;
 	width: 100%;
 }
+/* -----------------------> forth section */
 .forth-section {
 	margin: var(--default-margin);
 	padding: 40px 0;
@@ -390,4 +395,37 @@ header nav {
 
 .circles-container .circles-content p {
 	display: none;
+}
+
+/* -----------------------> fifth section */
+.fifth-section {
+	width: var(--container-width);
+	margin: var(--default-margin);
+	height: 40rem;
+}
+.swiper-container {
+	overflow: hidden;
+	background: rgba(142, 62, 248, 0.8);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	margin: 2rem;
+}
+.swiper-wrapper {
+	height: 20rem;
+}
+.swiper-slide {
+	height: 14rem;
+	width: 14rem;
+	margin: auto 0;
+	cursor: grab;
+}
+.swiper-slide:active {
+	cursor: grabbing;
+}
+.swiper-slide img {
+	max-width: 100%;
+	max-height: 100%;
 }
